@@ -1,6 +1,6 @@
 import datetime
 
-# Receives integer input from the user
+# Validates integer inputs from the user
 def intValid(inputPrompt, errorMessage):
      # Loops until a valid integer has been received
      while True:
@@ -14,7 +14,7 @@ def intValid(inputPrompt, errorMessage):
             print(f"Integer expected but not provided, {inputInt} is invalid")
             print(errorMessage)
 
-# Receives double input from the user
+# Validates double inputs from the user
 def floatValid(inputPrompt, errorMessage):
      # Loops until a valid float has been received
      while True:
@@ -28,7 +28,7 @@ def floatValid(inputPrompt, errorMessage):
             print(f"Decimal expected but not provided, {inputFloat} is invalid")
             print(errorMessage)
 
-# Validates the string input by the user
+# Validates the string inputs by the user
 def stringValid(inputPrompt, errorMessage):
     # Loops until a valid string has been received
     while True:
@@ -49,7 +49,7 @@ def yesNoValid(inputPrompt):
         else:
             print("Invalid input. Please choose Y or N")
 
-# Validates date inputs form the user
+# Validates date inputs from the user
 def dateValid(inputPrompt):
     # Loops until a valid date has been received
     while True:

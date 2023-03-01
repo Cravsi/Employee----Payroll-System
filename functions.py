@@ -14,6 +14,7 @@ db = mysql.connector.connect(
 def welcomeMessage():
     print("\nHello & Welcome!")
 
+# Displays a farewell message to the user when the application closes.
 def exitMessage():
     print("\nSee you next time!")
 
@@ -26,6 +27,7 @@ def countRows(myCommand):
     
     return len(count)
 
+# Retrieves the employee's name from database using their
 def getEmployeeName(empID):
     # Retrieve employee's name
     myCommand = f"SELECT firstName, surname FROM employee WHERE empID = {empID};"
